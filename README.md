@@ -157,7 +157,7 @@ k8s-incident-summarizer/
 **Vinay Charjan** — Platform & DevOps Engineer  
 Specializing in Azure Kubernetes Service (AKS), Terraform, SRE practices, and AI-assisted DevOps automation.
 
-[LinkedIn](https://linkedin.com/in/YOUR_PROFILE) · [GitHub](https://github.com/YOUR_USERNAME)
+[LinkedIn](https://www.linkedin.com/in/vinaycharjan/) 
 
 ---
 
