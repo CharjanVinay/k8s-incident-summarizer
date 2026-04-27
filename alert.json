@@ -1,0 +1,42 @@
+{
+  "version": "4",
+  "groupKey": "{}:{alertname=\"KubePodCrashLooping\"}",
+  "status": "firing",
+  "receiver": "slack-oncall",
+  "groupLabels": {
+    "alertname": "KubePodCrashLooping"
+  },
+  "commonLabels": {
+    "alertname": "KubePodCrashLooping",
+    "cluster": "aks-prod-dnb-01",
+    "namespace": "scoring-engine",
+    "pod": "credit-score-api-7d9f8b6c4-xk2pq",
+    "container": "credit-score-api",
+    "severity": "critical"
+  },
+  "commonAnnotations": {
+    "summary": "Pod is crash looping",
+    "description": "Pod credit-score-api-7d9f8b6c4-xk2pq in namespace scoring-engine is restarting 5 times / 10 minutes."
+  },
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alertname": "KubePodCrashLooping",
+        "cluster": "aks-prod-dnb-01",
+        "namespace": "scoring-engine",
+        "pod": "credit-score-api-7d9f8b6c4-xk2pq",
+        "container": "credit-score-api",
+        "severity": "critical"
+      },
+      "annotations": {
+        "summary": "Pod is crash looping",
+        "description": "Pod credit-score-api-7d9f8b6c4-xk2pq in namespace scoring-engine is restarting 5 times / 10 minutes. Last exit code: 1. OOMKilled: false.",
+        "runbook_url": "https://runbooks.internal/KubePodCrashLooping"
+      },
+      "startsAt": "2026-04-27T08:45:00Z",
+      "endsAt": "0001-01-01T00:00:00Z",
+      "generatorURL": "https://prometheus.aks-prod-dnb-01/graph?g0.expr=kube_pod_container_status_restarts_total"
+    }
+  ]
+}
